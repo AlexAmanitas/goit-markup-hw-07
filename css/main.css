@@ -324,4 +324,103 @@ img {
   text-transform: uppercase;
   color: #ffffff;
 }
+
+.team {
+  background-color: #f5f4fa;
+  /* outline: 1px solid green; */
+}
+
+.team__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+
+.card__signature {
+  padding: 30px 0;
+}
+
+.card {
+  margin-right: 30px;
+  /* outline: 1px solid gray; */
+  background-color: #ffffff;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.card__name {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.card__post {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.card-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-social__icon-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+  color: #afb1b8;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-social__icon-wrap:focus, .card-social__icon-wrap:hover {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.card-social__icon-wrap:last-child {
+  margin-right: 0;
+}
+
+.card-social__icon {
+  fill: currentColor;
+}
+
+.card-social__icon:hover, .card-social__icon:focus {
+  fill: currentColor;
+}
 /*# sourceMappingURL=main.css.map */
