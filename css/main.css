@@ -345,10 +345,6 @@ img {
   margin-top: 50px;
 }
 
-.card__signature {
-  padding: 30px 0;
-}
-
 .card {
   margin-right: 30px;
   /* outline: 1px solid gray; */
@@ -361,7 +357,11 @@ img {
   margin-right: 0;
 }
 
-.card__name {
+.card__body {
+  padding: 30px 0;
+}
+
+.card__title {
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -369,7 +369,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.card__post {
+.card__subtitle {
   margin-top: 10px;
   text-align: center;
   font-size: 16px;
@@ -378,7 +378,7 @@ img {
   color: #757575;
 }
 
-.card-social {
+.network-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,7 +388,15 @@ img {
           justify-content: center;
 }
 
-.card-social__icon-wrap {
+.network-block__item {
+  margin-right: 10px;
+}
+
+.network-block__item:last-child {
+  margin-right: 0;
+}
+
+.network-block__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,27 +408,22 @@ img {
           align-items: center;
   width: 44px;
   height: 44px;
-  margin-right: 10px;
   border-radius: 50%;
   color: #afb1b8;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-social__icon-wrap:focus, .card-social__icon-wrap:hover {
+.network-block__link:focus, .network-block__link:hover {
   background-color: #2196f3;
   color: #ffffff;
 }
 
-.card-social__icon-wrap:last-child {
-  margin-right: 0;
-}
-
-.card-social__icon {
+.network-block__icon {
   fill: currentColor;
 }
 
-.card-social__icon:hover, .card-social__icon:focus {
+.network-block__icon:hover, .network-block__icon:focus {
   fill: currentColor;
 }
 /*# sourceMappingURL=main.css.map */

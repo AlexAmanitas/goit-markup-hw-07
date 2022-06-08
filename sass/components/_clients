@@ -1,0 +1,50 @@
+.clients__title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+.clients__list {
+	display: flex;
+	margin-top: 50px;
+}
+
+.clients__item {
+	margin-right: 30px;
+
+	&:last-chaild {
+		margin-right: 0;
+	}
+}
+
+.cl-ibox {
+	display: flex;
+	width: 170px;
+	height: 92px;
+	justify-content: center;
+	align-items: center;
+
+	border: 1px solid var(--icon-color);
+	border-radius: 4px;
+	color: var(--icon-color);
+
+	transition: color 250ms var(--time-function);
+}
+
+.cl-ibox:hover,
+.cl-ibox:focus {
+	border: 1px solid var(--accent-color);
+	color: var(--accent-color);
+	cursor: pointer;
+}
+
+.cl-icon {
+	fill: currentColor;
+}
+
+.cl-icon:hover,
+.cl-icon:focus {
+	fill: currentColor;
+}

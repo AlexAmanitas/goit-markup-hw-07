@@ -16,10 +16,6 @@
 	margin-top: 50px;
 }
 
-.card__signature {
-	padding: 30px 0;
-}
-
 .card {
 	margin-right: 30px;
 
@@ -32,7 +28,11 @@
 	}
 }
 
-.card__name {
+.card__body {
+	padding: 30px 0;
+}
+
+.card__title {
 	text-align: center;
 
 	font-weight: 500;
@@ -41,7 +41,7 @@
 	letter-spacing: 0.03em;
 }
 
-.card__post {
+.card__subtitle {
 	margin-top: 10px;
 	text-align: center;
 
@@ -51,19 +51,26 @@
 	color: $link-color;
 }
 
-.card-social {
+.network-block {
 	display: flex;
 	margin-top: 16px;
 	justify-content: center;
 }
 
-.card-social__icon-wrap {
+.network-block__item {
+	margin-right: 10px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.network-block__link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 44px;
 	height: 44px;
-	margin-right: 10px;
 
 	border-radius: 50%;
 	color: $icon-color;
@@ -75,13 +82,9 @@
 		background-color: $accent-color;
 		color: $white;
 	}
-
-	&:last-child {
-		margin-right: 0;
-	}
 }
 
-.card-social__icon {
+.network-block__icon {
 	fill: currentColor;
 
 	&:hover,
